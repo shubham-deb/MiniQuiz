@@ -1,0 +1,284 @@
+<html>
+<head>
+<title>	pvpp student organisation: Donations</title>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script>
+<!--
+function validateForm(){
+   var amount = document.getElementById("AMOUNT").value;  
+   var firstName = document.getElementById("USER1").value;
+   var lastName = document.getElementById("USER2").value;
+   var street = document.getElementById("ADDRESS").value;
+   var city = document.getElementById("CITY").value;  
+   var state = document.getElementById("STATE").value;
+   var zip = document.getElementById("ZIP").value;
+   var country = document.getElementById("COUNTRY").value;
+   var email = document.getElementById("EMAIL").value;  
+  
+   if (amount < 1 || firstName == "" || lastName == "" || street == "" || city == "" || state == "" || zip == "" || country == "" || email == "" ) {
+   		generalError("Please enter all fields marked with an '*'");
+		return false;
+   } else {
+      if (checkEmail(email) != true) {
+	  	 generalError("Please enter a valid email address so that we can contact you."); 
+		 return false;
+	  }
+      else {
+	  	  generalErrorClear();	  
+		  if (document.getElementById("CUSTID").value != "") {
+			  document.getElementById("DESCRIPTION").value = "Membership No.: " + document.getElementById("CUSTID").value + " " + document.getElementById("DESCRIPTION").value;		  
+		  }
+		  if (document.getElementById("NAMETOSHIP").value == "") {
+			  document.getElementById("NAMETOSHIP").value = "Individual";
+		  }	 	   
+		  document.getElementById("NAME").value = firstName + " " + lastName;
+	  }
+	}		
+  	return true;
+}
+function checkEmail(emailaddr) {
+	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailaddr)){
+		return true;
+	}
+	return false;
+}
+// Added .style to this document of: errorMsg
+// Also added DIV tag for error_General
+function generalError(msg) { drawShow( document.getElementById('error_General'), msg); }
+
+function generalErrorClear() { 
+      var ele = document.getElementById('error_General')
+      ele.style.visibility = 'hidden'; 
+      ele.innerHTML = '';
+}
+
+function drawShow(ele,msg) { if(msg) {ele.innerHTML=msg;} ele.style.visibility = 'visible'; }
+
+function drawHide(ele) { 
+      ele.style.visibility = 'hidden'; 
+      ele.innerHTML = '';
+}
+//-->
+</script>
+<link href="wvstyle.css" tppabs="wvstyle.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+a:link {
+	color: #007520;
+}
+a:visited {
+	color: #007520;
+}
+a:hover {
+	color: #00BD20;
+}
+a:active {
+	color: #00BD20;
+}
+.style2 {font-size: small}
+.errorMsg {
+   font-weight: bold;
+   color: #C00;
+}
+</style>
+</head>
+<body BACKGROUND="IMAGES.PNG ">
+
+<table width="800" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="128" rowspan="2"></td>
+    <td width="48" rowspan="2"> </td>
+    <td width="624" height="51" valign="top" nowrap></td>
+  </tr>
+  <tr valign="top">
+    <td width="624" height="360" valign="top"><p><br>
+       
+
+      <TABLE align="center" width=100%>
+        <FORM action="" method="post" name="inthewingsform" ORDERFORM=False SHOWCONFIRM=False>
+          <TR>
+            <TD align="center" colspan=2></TD>
+          </TR>
+          <TR>
+            <TD align="center" colspan=2><p class="Plain"><span class="TextHeading"><B><FONT SIZE="6">PVPP STUDENTS GROUP ONLINE DONATION
+                
+                FORM</FONT></B></span><br>
+                Please fill out the form below to make a credit card donation today <br>
+
+                and help in making us more such useful websites & applications. (It's secure, quick and easy!)</p>
+              <p align="right" class="Plain style2">Note: All donations of Rs100 or more are tax deductible. <br>
+                Fields marked with a <FONT COLOR="#333333"><FONT COLOR="#26e500">*</FONT></FONT> are required for receipting and acknowledgement. </p>
+              <TABLE width=100% cellpadding="0" cellspacing=0 ; border: 1px solid #fac99e;margin: 0;" >
+                <TR>
+                  <TD valign="top" style="padding:4"><TABLE  cellpadding="0" cellspacing="4"  width=100% class="MAINTXT1">
+
+                      <TR>
+                        <TD align="left" class="MAINTXT1"></TD>
+                      </TR>
+                      <TR>
+                        <TD align="left" class="Plain"><FONT COLOR="#333333">Yes, I would like to donate the amount of <FONT COLOR="#26e500">*</FONT></FONT></TD>
+                        <TD  align="right" class="Plain">RS
+                          <input id="AMOUNT" name="AMOUNT" type="text" size="30">
+                        </TD>
+
+                      </tr>
+                      <TR>
+                        <TD height="22" align="left" class="Plain">Payment for <FONT COLOR="#26e500">* </FONT></TD>
+                        <TD  align="right" class="Plain"><SELECT id="USER3" name="USER3" class="MAINTXT1" style="width:31ex" >
+                            <option value="Web - Donation Payment" selected>Donation
+                            <option value="Web - Membership Payment">Membership
+                            <option value="Web - Orders Payment">Orders
+                            <option value="Web - Training Payment">Training
+                          </SELECT>
+                        </TD>
+
+                      </TR>
+                      
+                      <TD align="left" class="Plain"> First Name <FONT COLOR="#26e500">*</FONT> </TD>
+
+                        <TD align="right"  class="MAINTXT1"><span class="Plain">
+                          <INPUT name="USER1" TYPE="text" class="MAINTXT1" id="USER1" size=30>
+                          </span></TD>
+                      </TR>
+                      <TR>
+                        <TD align="left" class="MAINTXT1"><span class="Plain">Last Name <FONT COLOR="#26e500">*</FONT> </span></TD>
+                        <TD align="right"  valign="middle" class="MAINTXT1"><span class="Plain">
+
+                          <INPUT name="USER2" TYPE="text" class="MAINTXT1" id="USER2" size=30>
+                          </span> </TD>
+                      </TR>
+                      <TR>
+                        <TD align="left" class="MAINTXT1"><span class="Plain">Address <FONT COLOR="#26e500">*</FONT></FONT> </span></TD>
+                        <TD align="right"  valign="middle" class="MAINTXT1"><span class="Plain">
+                          <INPUT class="MAINTXT1" TYPE="text" id="ADDRESS" name="ADDRESS" size=30>
+
+                          </span> </TD>
+                      </TR>
+                      <TR>
+                        <TD align="left" class="MAINTXT1"><span class="Plain">Suburb/ Town <FONT COLOR="#26e500">*</FONT></FONT> </span> </TD>
+                        <TD align="right"  class="MAINTXT1"><span class="Plain">
+                          <INPUT class="MAINTXT1" TYPE="text" id="CITY" name="CITY" size=30>
+
+                          </span> </TD>
+                      </TR>
+                      <TR>
+                        <TD align="left" class="MAINTXT1"><span class="Plain"><FONT COLOR="#333333">State <FONT COLOR="#26e500">*</FONT></FONT> </span></TD>
+                        <TD align="right"  class="MAINTXT1"><span class="Plain">
+                          <SELECT id="STATE" name="STATE" class="MAINTXT1" style="width:31ex" >
+                            <OPTION value="">Select State
+                            <OPTION value="ACT">maharashtra
+                            <OPTION value="NSW">delhi
+                            <OPTION value="NT">utter pradesh
+                            <OPTION value="QLD">bihar
+                            <OPTION value="SA">goa
+                            <OPTION value="TAS">Tamilnadu
+                            <OPTION value="VIC" selected>karnataka
+                            <OPTION value="WA">assam
+                          </SELECT>
+
+                          </span></TD>
+                      </TR>
+                      <TD align="left" class="MAINTXT1"></td>
+                      <TR>
+                        <TD align="left" class="Plain"><FONT COLOR="#333333">Postcode <FONT COLOR="#26e500">*</FONT></FONT> </TD>
+                        <TD align="right"  class="MAINTXT1"><span class="Plain">
+                          <INPUT class="MAINTXT1" TYPE="text" id="ZIP" name="ZIP" size=30>
+
+                          </span> </TD>
+                      </TR>
+                      <TR>
+                        <TD align="left" class="Plain"> Country</FONT> <FONT COLOR="#26e500">*</FONT></FONT></TD>
+                        <TD align="right"  class="MAINTXT1"><span class="Plain">
+                          <input id="COUNTRY" name="COUNTRY" type="text" value="INDIA" size="30">
+
+                          </span></TD>
+                      </TR>
+                      <TR>
+                        <TD align="left" class="Plain"> Phone contact</TD>
+                        <TD align="right"  class="Plain"><span class="Plain">
+                          <input id="PHONE" name="PHONE" type="text" size="30">
+                          </span></TD>
+                      </TR>
+
+                      <TR>
+                        <TD align="left" class="Plain"> Email contact <FONT COLOR="#333333"><FONT COLOR="#26e500">*</FONT></FONT></FONT></TD>
+                        <TD align="right"  class="Plain"><span class="Plain">
+                          <input id="EMAIL" name="EMAIL" type="text" size="30">
+                          </span></TD>
+                      </TR>
+                      <TR>
+
+                        <TD align="left" class="Plain">Description of payment or comment (optional)<br>
+                          <span class="style2">(eg donation in honour/ memory of...)</span></TD>
+                        <TD align="right"  class="Plain"><textarea id="DESCRIPTION" name="DESCRIPTION" cols="23" class="MAINTXT1"></textarea></TD>
+                      </TR>
+                      <TR>
+                        <TD colspan="2" align="left" class="Plain"><div class=errorMsg id="error_General"></div></TD>
+                      </TR>
+
+                    </TABLE></TD>
+                </TR>
+              </TABLE></TD>
+          </TR>
+          <TR>
+            <TD valign="top"  style="padding:4"><TABLE  cellpadding="0" cellspacing="0"  width=100% class="MAINTXT1">
+                <TR>
+                  <TD align="center" style="padding:2" valign="top"><TABLE width=100% cellpadding="3">
+                      <TR>
+
+                        <TD align="right" class="MAINTXT1"><p><FONT COLOR="#333333"></FONT>
+                            <input type="hidden" name="LOGIN" value="xxxxx organisation xxxxxxx">
+                            <input type="hidden" name="PARTNER" value="VSA">
+                            <input type="hidden" name="TYPE" value="S">
+                            <input type="hidden" name="SHOWCONFIRM" value="False">
+                            <input type="hidden" name="METHOD" value="CC">
+                            <input type="hidden" id="NAME" name="NAME">
+                            <input type="hidden" id="NAMETOSHIP" name="NAMETOSHIP">
+                            <INPUT type="submit" value="Donate Now" class="MAINTXT1" ORDERFORM=False SHOWCONFIRM=False onclick="return validateForm();">
+
+                          </p>
+                          <p align="left">
+                            <!--<script src=https://seal.verisign.com/getseal?host_name=www.atyp.com.au&size=S&use_flash=YES&use_transparent=YES></script></script>-->
+                            If you experience any difficulties using this form, please contact <a href="mailto:xxxxxx@xxxxxxx.org.au">VISHAL3071@GMAIL.COM</a> by email or call 8108427621 or <a href="mailto:yyyyyyyy@yyyyyyyy.org.au">SHUBHAMDEB@GMAIL.COM</a> by email or on 9987895235.<br>
+                            For more information about donations & other donation methods (eg mail) please click <a href="donations.html" tppabs="donations.html">here</a>. </p>
+
+                        <p>  </p></TD>
+                      </TR>
+                    </TABLE></TD>
+                </TR>
+              </TABLE></TD>
+          </TR>
+        </FORM>
+      </TABLE></TD>
+
+  </TR>
+  </td>
+  </tr>
+</table>
+</body>
+</html>

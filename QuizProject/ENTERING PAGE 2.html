@@ -1,0 +1,150 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style type="text/css">
+
+body{
+margin:0px;
+padding:0px;
+background:url(help.jpg);
+background-attachment:fixed;
+background-repeat:no-repeat;
+background-size:1500px 1000px;
+}
+
+
+
+
+.header1{
+position:relative;
+left:5px;
+min-width:50px;
+min-height:100px;
+border-bottom-style:;
+border-bottom-color:;
+border-right-color:transparent;
+border-left-color:transparent;
+border-top-color:;
+}
+
+
+
+.header2{
+position:absolute;
+top:0px;
+left:100px;
+min-width:100px;
+min-height:100px;
+border-right-color:;
+border-right-style:;
+border-left-color:transparent;
+border-top-color:transparent;
+border-bottom-color:transparent;
+}
+
+.header3{
+position:relative;
+left:400px;
+min-width:10px;
+min-height:5px;
+border-left-width:20px;
+border-right-color:;
+border-right-style:;
+border-left-color:;
+border-top-color:transparent;
+border-bottom-color:;
+}
+h3{
+display:inline;
+padding:20px;
+font-size=50%;
+}
+#whole-text-1{
+position:relative;
+top:50px;
+left:450px;
+}
+#about{
+-webkit-animation:myfirst 5s;
+ animation: myfirst 5s; 
+}
+#test{
+-webkit-animation:myfirstanim 5s;
+ animation: myfirstanim 5s; 
+}
+@-webkit-keyframes myfirst {
+    0%   {-webkit-transform: rotate(90deg);left;0px;top:0px;}
+    25%  {-webkit-transform: rotate(450deg);left;300px;top:0px;}
+    50%  {-webkit-transform: rotate(180deg);left;300px;top:100px;}
+    75%  {-webkit-transform: rotate(90deg);left;300px;top:200px;}
+    100% {-webkit-transform: rotate(360deg);left;300px;top:300px;}
+}
+@keyframes myfirst {
+    0%   {transform: rotate(360deg);left;50px;top:0px;}
+    25%  {transform: rotate(360deg);left;300px;top:0px;}
+    50%  {transform: rotate(360deg);left;300px;top:100px;}
+    75%  {transform: rotate(360deg);left;300px;top:200px;}
+    100% {transform: rotate(360deg);left;300px;top:300px;}
+}
+@-webkit-keyframes myfirstanim {
+    0%   {-webkit-transform: rotate(90deg);left;0px;top:0px;}
+    25%  {-webkit-transform: rotate(450deg);left;200px;top:50px;}
+    50%  {-webkit-transform: rotate(180deg);left;300px;top:150px;}
+    75%  {-webkit-transform: rotate(90deg);left;500px;top:200px;}
+    100% {-webkit-transform: rotate(360deg);left;520px;top:300px;}
+}
+@keyframes myfirstanim {
+    0%   {transform: rotate(360deg);left;0px;top:0px;}
+    25%  {transform: rotate(360deg);left;200px;top:50px;}
+    50%  {transform: rotate(360deg);left;300px;top:150px;}
+    75%  {transform: rotate(360deg);left;500px;top:200px;}
+    100% {transform: rotate(360deg);left;520px;top:300px;}
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript">
+window.onload=function(){
+setTimeout(function(){
+$("h2").fadeIn("slow","linear");
+}, 1000);
+setTimeout(function(){
+$("#about").fadeIn("slow","linear");
+}, 2000);
+setTimeout(function(){
+$("#test").fadeIn("slow","linear");
+}, 3000);	
+};
+</script>
+</head>
+
+<body>
+<div class="header1">
+</div>
+
+<div class="header2">
+</div>
+
+
+
+<div class="header3">
+</div>
+
+<div id="whole-text-1" class="let-spacing" style="visibility:visible;">
+<h2 style="display:;letter-spacing:5px;">
+<font color="white" style="position:absolute;top:200px;left:250px;"><i>HEY , MY NAME IS PANKAJ. <br>HOW CAN I HELP YOU TODAY?</i></font></br>
+</h2>
+<a href="slide1.html">
+<button  id="about" style="display:;position:absolute;top:300px;left:250px;width:200px;min-height:100px; ">
+MOVE ABOUT</button></a>
+<a href="quizpage1.html">
+<button  id="test" style="display:;position:absolute;top:300px;left:520px;width:200px;min-height:100px;">TAKE A QUICK SAMPLE TEST</button>
+</a>
+</div>
+</body>
+</html>

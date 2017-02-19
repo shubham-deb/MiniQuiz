@@ -1,0 +1,169 @@
+
+<!-- saved from url=(0050)file:///C:/Users/Shubham/Desktop/LMS/QuizPage.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<style type="text/css">
+
+body{
+margin:0px;
+padding:0px;
+background:url();
+background-attachment:fixed;
+min-height:2000px;
+}
+
+
+
+.header1{
+position:relative;
+background:url(navbar.jpg);
+left:0px;
+min-width:50px;
+min-height:100px;
+border-bottom-style:solid;
+border-bottom-color:black;
+border-right-style:solid;
+border-right-color:black;
+border-left-color:transparent;
+border-top-color:solid black;
+}
+
+
+
+.header2{
+position:absolute;
+top:0px;
+left:0px;
+min-width:200px;
+min-height:100px;
+border-right-color:black;
+border-right-style:solid;
+border-left-color:transparent;
+border-top-color:transparent;
+border-bottom-color:transparent;
+}
+
+.header3{
+position:relative;
+background:url(home.jpg);
+background-repeat:no-repeat;
+background-size:1500px 900px;
+left:0px;
+min-width:1300px;
+min-height:1500px;
+border-left-width:20px;
+border-right-color:black;
+border-right-style:solid;
+border-left-color:black;
+border-top-color:transparent;
+border-bottom-color:black;
+}
+h3{
+display:inline;
+padding:20px;
+font-size=50%;
+}
+strong:hover{
+text-decoration:underline;
+cursor:pointer;
+}
+</style>
+<script type="text/javascript">
+function init()
+{
+setTimeout(function () {
+document.getElementById("Content1").style.display= "none";  
+document.getElementById("QuizImage").style.display= ""; 
+document.getElementById("slideimage2").style.display= ""; 
+}, 4000);
+setTimeout(function () {
+document.getElementById("QuizImage").style.display= "none"; 
+ document.getElementById("line").style.display= "none"; 
+document.getElementById("slideimage2").style.display= "none"; 
+document.getElementById("TeamImage").style.display= ""; 
+document.getElementById("slideimage3").style.display= "";
+}, 8000);
+setTimeout(function () {
+document.getElementById("TeamImage").style.display= "none"; 
+document.getElementById("slideimage3").style.display= "none";
+document.getElementById("Content1").style.display= "";  
+}, 12000);
+setTimeout(function () {
+document.getElementById("Content1").style.display= "none";  
+document.getElementById("QuizImage").style.display= ""; 
+document.getElementById("slideimage2").style.display= ""; 
+ document.getElementById("line").style.display= ""; 
+}, 16000);
+setTimeout(function () {
+document.getElementById("QuizImage").style.display= "none"; 
+ document.getElementById("line").style.display= "none"; 
+document.getElementById("slideimage2").style.display= "none"; 
+document.getElementById("TeamImage").style.display= ""; 
+document.getElementById("slideimage3").style.display= "";
+}, 20000);
+}
+window.onload=function()
+{
+init();
+}
+
+
+</script>
+</head>
+
+<body>
+  <!--   this is the nav bar section         -->
+<div class="header1">   
+<nav>
+<a href="slide1.html"><strong style="position:absolute;left:700px;top:50px;" id="home">HOME</strong></a>
+<a href="about1.html"><strong style="position:absolute;left:800px;top:50px;" id="about">ABOUT</strong></a>
+<a href="quizpage.html"><strong style="position:absolute;left:900px;top:50px;" id="quiz">QUIZ</strong></a>
+<a href="notes.html"><strong style="position:absolute;left:1000px;top:50px;" id="notes">NOTES</strong></a>
+<a href="register.html"><strong style="position:absolute;left:1100px;top:50px;" id="signup">SIGNUP</strong></a>
+<a href="donation.html"><strong style="position:absolute;left:1200px;top:50px;" id="donation">DONATION</strong></a>
+</nav>
+</div>
+  <!--   this is the logo section         -->
+<div class="header2" style="background-image:url(joker.jpg);background-repeat:no-repeat;background-size:200px 150px;background-position:center">
+</div>
+  <!--   this is the content section         -->
+<div class="header3">
+</div>
+  
+ 
+
+<div id="background" style="background-image:url();background-color:white;background-repeat:no-repeat;width:60%;
+height:80%;background-size:250px 180px;background-position:center;position:relative;left:220px;top:-1480px;">
+
+
+<div id="Content1">
+<img src="notes.jpg" id="slideimage1" height="75%" width="100%" style="position:absolute;top:0%;left:0%;"></img>
+<i style="background-color:#C0C0C0;position:absolute;top:342px;left:0%;min-height:10%;min-width:100%;">
+<strong style="position:absolute;left:25%;">Education is not preparation for life; education is life itself.</strong>
+<br/></i>
+<i style="position:absolute;left:30%;top:370px;">John Dewey</i>
+<i style="position:absolute;top:400px;left:10%;letter-spacing:3px;"><font size="6" color="green">WE PROVIDE YOU HIGH QUALITY NOTES <br/>BASED ON ANY SUBJECT YOU NEED<hr/></font></i>
+</div>
+
+<div style="display:none;" id="QuizImage">
+<img src="quiz.jpg" id="slideimage2" height="75%" width="100%" style="display:none;position:absolute;top:0%;left:0%;"></img>
+<i style="background-color:#C0C0C0;position:absolute;top:342px;left:0%;min-height:10%;min-width:100%;">
+<strong style="position:absolute;left:25%;">Education is the most powerful weapon which you can use to change the world.</strong>
+<br/></i>
+<i style="position:absolute;left:30%;top:370px;">Nelson Mandela</i>
+<i id="line" style="position:absolute;top:400px;left:10%;letter-spacing:3px;"><font size="6" color="green"><hr/>ARE YOU BETTER THAN ALIA BHATT? <br/>TAKE OUR QUIZ TO FIND OUT<hr/></font></i>
+</div>
+
+<div style="display:none;" id="TeamImage">
+<img src="team.jpg" id="slideimage3" height="75%" width="100%" style="display:none;position:absolute;top:0%;left:0%;"></img>
+<div>
+<i style="background-color:#C0C0C0;position:absolute;top:342px;left:0%;min-height:10%;min-width:100%;">
+<strong style="position:absolute;left:25%;">Coming together is a beginning; keeping together is progress; working together is success.</strong>
+<br/></i>
+<i style="position:absolute;left:30%;top:370px;">Henry Ford</i>
+</div>
+<i style="position:absolute;top:400px;left:10%;letter-spacing:3px;"><font size="6" color="green"><hr/>WANT TO KNOW US BETTER? <br/>TAKE A LOOK AT OUR TEAM<hr/></font></i>
+</div>
+
+</div>
+
+</body></html>

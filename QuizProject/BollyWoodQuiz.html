@@ -1,0 +1,276 @@
+
+<!-- saved from url=(0050)file:///C:/Users/Shubham/Desktop/LMS/QuizPage.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<style type="text/css">
+
+body{
+margin:0px;
+padding:0px;
+background:url();
+background-attachment:fixed;
+min-height:500px;;
+}
+
+
+
+.header1{
+position:relative;
+background:url(navbar.jpg);
+left:0px;
+min-width:50px;
+min-height:100px;
+border-bottom-style:solid;
+border-bottom-color:black;
+border-right-style:solid;
+border-right-color:black;
+border-left-color:transparent;
+border-top-color:solid black;
+}
+
+
+
+.header2{
+position:absolute;
+top:0px;
+left:0px;
+min-width:200px;
+min-height:100px;
+border-right-color:black;
+border-right-style:solid;
+border-left-color:transparent;
+border-top-color:transparent;
+border-bottom-color:transparent;
+}
+
+.header3{
+position:relative;
+background:url(cloud.jpg);
+background-repeat:no-repeat;
+opacity:.25;
+left:0px;
+min-width:1300px;
+min-height:1000px;
+border-left-width:20px;
+border-right-color:black;
+border-right-style:solid;
+border-left-color:black;
+border-top-color:transparent;
+border-bottom-color:black;
+}
+h3{
+display:inline;
+padding:20px;
+font-size=50%;
+}
+strong:hover{
+text-decoration:underline;
+}
+</style>
+<script src="./QuizPage_files/jquery.min.js"></script>
+<script src="./QuizPage_files/jquery-ui.min.js"></script>
+<script type="text/javascript">
+function myOverFunction(){
+document.getElementById("list-element").style.display="";
+}
+ function myOutFunction(){
+document.getElementById("list-element").style.display="none";
+}
+</script>
+</head>
+
+<body>
+  <!--   this is the nav bar section         -->
+<div class="header1"> 
+<nav>
+<div id="list" style="position:absolute;left:670px;top:50px;display:;"  onmouseover="myOverFunction()" onmouseout="myOutFunction()">
+<a href="slide1.html"><strong style="position:absolute;left:40px;display:;" id="home">HOME</strong></a>
+					</div>
+					
+<a href="about1.html"><strong style="position:absolute;left:800px;top:50px;" id="about">ABOUT</strong></a>
+<a href="QuizPage.html"><strong style="position:absolute;left:900px;top:50px;" id="quiz">QUIZ</strong></a>
+<a href="notes.html"><strong style="position:absolute;left:1000px;top:50px;" id="notes">NOTES</strong></a>
+<a href="register.html"><strong style="position:absolute;left:1100px;top:50px;" id="signup">SIGNUP</strong></a>
+<a href="donation.html"><strong style="position:absolute;left:1200px;top:50px;" id="donation">DONATION</strong></a>
+</nav>
+</div>
+  <!--   this is the logo section         -->
+<div class="header2" style="background-image:url(joker.jpg);background-repeat:no-repeat;background-size:200px 150px;background-position:center">
+</div>
+  <!--   this is the content section         -->
+<div class="header3">
+</div>
+  
+  <div>
+  
+
+<div id="q0">
+<canvas id="myCanvas" width="400" height="100" style="position:absolute;top:250px;left:450px;border:1px solid #000000;">
+</canvas>
+
+ <em id="question" style="border-width:20px;position:absolute; top:300px; left:480px;letter-spacing:5px;"><b><font size="4">Before Akshay Kumar became<br/> an actor,
+he worked as a..?.</font></b></em>
+
+<img src="RightArrow.png" height="Clerk" width="80" style="position:absolute;top:450px;left:950px;" onclick="toggle(0,1)" id="RightArrow">
+</img>
+
+ <input  type="button" onclick="toggle(0,1)" value="Reporter" id="op-a" name="ans0" style="position:absolute; top:400px; left:430px;min-height:100px;min-width:150px; border-radius: 20%;"></input>									<!--optionA-->	
+
+
+ <input  type="button" onclick="toggle(0,1)" value="Waiter" id="op-b" name="ans0" style="position:absolute; top:400px; left:750px;min-height:100px;min-width:150px; border-radius: 20%;"></input>									<!--optionB-->
+
+ <input  type="button" onclick="" value="Journalist" id="op-c" name="ans0" style="position:absolute; top:550px; left:430px;min-height:100px;min-width:150px; border-radius: 20%;"></input>									<!--optionC-->	
+
+
+  <input type="button" onclick="toggle(0,1)" value="60" id="op-d" name="ans0" style="position:absolute; top:550px; left:750px;min-height:100px;min-width:150px; border-radius: 20%;"></input>										<!--optionD-->
+</div>
+</script>
+
+<script type="text/javascript">
+var AnsweredCorrectly=0;
+document.getElementById('op-c').onclick=function(){
+AnsweredCorrectly+=1;
+document.getElementById('op-c').style.backgroundColor="green";
+}
+
+</script>
+
+<div id="q1" style="display:none;">
+<canvas id="myCanvas" width="400" height="100" style="position:absolute;top:250px;left:450px;border:1px solid #000000;">
+</canvas>
+
+ <em id="question" style="position:absolute; top:280px; left:480px;letter-spacing:5px;"><b><font size="4">In Kal Ho Naa Ho, whom<br>does Shah Rukh pretend to be <br>married to?</b></font></em>
+
+<img src="RightArrow.png" height="80" width="80" style="position:absolute;top:450px;left:950px;" onclick="toggle(1,2)" id="RightArrow">
+</img>
+
+ <input  type="button" onclick="toggle(1,2)" value="Delnaz Paul" id="op-a1" name="ans1" style="position:absolute; top:400px; left:430px;min-height:100px;min-width:150px; border-radius: 20%;"></input>									<!--optionA-->	
+
+
+ <input  type="button" onclick="toggle(1,2)" value="Simone Singh" id="op-b1" name="ans1" style="position:absolute; top:400px; left:750px;min-height:100px;min-width:150px; border-radius: 20%;"></input>									<!--optionB-->
+
+ <input  type="button" onclick="toggle(1,2)" value="Sonali Bendre" name="ans1" id="op-c1" style="position:absolute; top:550px; left:430px;min-height:100px;min-width:150px; border-radius: 20%;"></input>									<!--optionC-->	
+
+
+  <input type="button" onclick="" value="Preity Zinta" name="ans1" id="op-d1" style="position:absolute; top:550px; left:750px;min-height:100px;min-width:150px; border-radius: 20%;"></input>										<!--optionD-->
+</div>
+<script>
+document.getElementById('op-d1').onclick=function(){
+AnsweredCorrectly+=1;
+toggle(1,2);
+}
+function toggle(a,b){
+document.getElementById('q'+a).style.display="none";
+document.getElementById('q'+b).style.display="";
+}
+</script>
+
+<!--                QUESTION 3             -->
+<div id="q2" style="display:none;">
+<canvas id="myCanvas" width="400" height="100" style="position:absolute;top:250px;left:450px;border:1px solid #000000;">
+</canvas>
+
+ <em id="question" style="position:absolute; top:280px; left:470px;letter-spacing:5px;"><b><font size="4">The villain in Ram Gopal <br/>Varma’s Jungle was played by…</font></b><br/></em>
+
+<img src="RightArrow.png" height="80" width="80" name="ans2" style="position:absolute;top:450px;left:950px;" onclick="toggle(2,3)" id="RightArrow1">
+</img>
+
+ <input  type="button" onclick="toggle(2,3)" value="Suniel Shetty"  name="ans2" id="op-a2" style="position:absolute; top:400px; left:430px;min-height:100px;min-width:150px; border-radius: 20%;"></input>									<!--optionA-->	
+
+
+ <input  type="button" onclick="toggle(2,3)" value="Fardeen Khan"  name="ans2" id="op-b2" style="position:absolute; top:400px; left:750px;min-height:100px;min-width:150px; border-radius: 20%;"></input>									<!--optionB-->
+
+ <input  type="button" onclick="toggle(2,3)" value="Ajay Devgan"  name="ans2" id="op-c2" style="position:absolute; top:550px; left:430px;min-height:100px;min-width:150px; border-radius: 20%;"></input>									<!--optionC-->	
+
+
+  <input type="button" onclick="" value="Sushant Singh "  name="ans2" id="op-d2" style="position:absolute; top:550px; left:750px;min-height:100px;min-width:150px; border-radius: 20%;"></input>										<!--optionD-->
+</div>
+<script>
+document.getElementById('op-d2').onclick=function(){
+AnsweredCorrectly+=1;
+toggle(2,3);
+}
+</script>
+
+<div id="q3" style="display:none;">
+<canvas id="myCanvas" width="500" height="200" style="position:absolute;top:150px;left:450px;border:1px solid #000000;">
+</canvas>
+
+ <em id="question" style="position:absolute; top:180px; left:470px;letter-spacing:5px;"><b><font size="4">We all know Ranveer Singh,<br> Arjun Kapoor and Priyanka Chopra star<br/> in Gunday. But there is anotherd<br/> talented actor, who is part of the film.<br/> Name the actor. </font></b> <br/><br/></em>
+
+<img src="RightArrow.png" height="80" width="80" name="ans2" style="position:absolute;top:450px;left:950px;" onclick="toggle(2,3)" id="RightArrow1">
+</img>
+
+ <input  type="button" onclick="toggle(3,4)" value="Naseeruddin Shah"  name="ans2" id="op-a3" style="position:absolute; top:400px; left:430px;min-height:100px;min-width:150px; border-radius: 20%;"></input>									<!--optionA-->	
+
+
+ <input  type="button" onclick="toggle(3,4)" value="Nawazuddin Siddiqui"  name="ans2" id="op-b3" style="position:absolute; top:400px; left:750px;min-height:100px;min-width:150px; border-radius: 20%;"></input>									<!--optionB-->
+
+ <input  type="button" onclick="toggle(3,4)" value="Irrfan Khan"  name="ans2" id="op-c3" style="position:absolute; top:550px; left:430px;min-height:100px;min-width:150px; border-radius: 20%;"></input>									<!--optionC-->	
+
+
+  <input type="button" onclick="" value="none of the above"  name="ans2" id="op-d3" style="position:absolute; top:550px; left:750px;min-height:100px;min-width:150px; border-radius: 20%;"></input>										<!--optionD-->
+</div>
+<script>
+document.getElementById('op-d3').onclick=function(){
+AnsweredCorrectly+=1;
+toggle(3,4);
+}
+function end(a,b){
+document.getElementById('q'+a).style.display="none";
+if(AnsweredCorrectly==0)
+document.getElementById("0ans").style.display="";
+if(AnsweredCorrectly==1)
+document.getElementById("1ans").style.display="";
+if(AnsweredCorrectly==2)
+document.getElementById("2ans").style.display="";
+if(AnsweredCorrectly==3)
+document.getElementById("3ans").style.display="";
+if(AnsweredCorrectly==4)
+document.getElementById("4ans").style.display="";
+if(AnsweredCorrectly==5)
+{
+document.getElementById("5ans").style.display="";
+document.getElementById("q5").innerHTML="ALL ANSWERS ARE CORRECT";
+}
+document.getElementById('q'+b).style.display="";
+}
+</script>
+
+<div id="q4" style="display:none;">
+<canvas id="myCanvas" width="400" height="100" style="position:absolute;top:250px;left:450px;border:1px solid #000000;">
+</canvas>
+
+ <em id="question" style="position:absolute; top:280px; left:480px;letter-spacing:5px;"><b><font size="4">Which film will see Farhan <br>Akhtar and Vidya Balan d<br/>opposite each other?</font></b><br/></em>
+
+<img src="RightArrow.png" height="80" width="80" name="ans2" style="position:absolute;top:450px;left:950px;" onclick="toggle(2,3)" id="RightArrow1">
+</img>
+
+ <input  type="button" onclick="end(4,5)" value="Humshakals"  name="ans2" id="op-a4" style="position:absolute; top:400px; left:430px;min-height:100px;min-width:150px; border-radius: 20%;"></input>									<!--optionA-->	
+
+
+ <input  type="button" onclick="" value="Shadi ke side effect"  name="ans2" id="op-b4" style="position:absolute; top:400px; left:750px;min-height:100px;min-width:150px; border-radius: 20%;"></input>									<!--optionB-->
+
+ <input  type="button" onclick="end(4,5)" value="Bhag Milkha Bhag"  name="ans2" id="op-c4" style="position:absolute; top:550px; left:430px;min-height:100px;min-width:150px; border-radius: 20%;"></input>									<!--optionC-->	
+
+
+  <input type="button" onclick="end(4,5)" value="PK"  name="ans2" id="op-d4" style="position:absolute; top:550px; left:750px;min-height:100px;min-width:150px; border-radius: 20%;"></input>										<!--optionD-->
+</div>
+<script>
+document.getElementById('op-b4').onclick=function(){
+AnsweredCorrectly+=1;
+end(4,5);
+}
+</script>
+
+<div id="0ans" height="50%" style="background:url(0answers.jpg);display:none;z-index:2;min-height:500px;min-width:500px;position:absolute;top:50%;left:40%;background-repeat:no-repeat;"></div>
+<div id="1ans" height="50%" style="background:url(1answer.jpg);display:none;z-index:2;min-height:500px;min-width:500px;position:absolute;top:55%;left:40%;background-repeat:no-repeat;"></div>
+ <div id="2ans" height="50%" style="background:url(2answers.jpg);display:none;z-index:2;min-height:500px;min-width:500px;position:absolute;top:55%;left:40%;background-repeat:no-repeat;"></div>
+ <div id="3ans" height="50%" style="background:url(3answers.jpg);display:none;z-index:2;min-height:500px;min-width:500px;position:absolute;top:55%;left:40%;background-repeat:no-repeat;"></div>
+ <div id="4ans" height="50%" style="background:url(4answers.jpg);display:none;z-index:2;min-height:500px;min-width:500px;position:absolute;top:55%;left:40%;background-repeat:no-repeat;"></div>
+ <div id="5ans" height="50%" style="background:url(5answers.jpg);display:none;z-index:2;min-height:500px;min-width:500px;position:absolute;top:55%;left:40%;background-repeat:no-repeat;"></div>
+
+ 
+ <div id="q5" style="display:none;position:absolute; top:300px; left:570px;z-index:2;"><font size="4" style="word-spacing:5px;">YOUR SCORE IS</font></div>
+
+</body>
+</html>

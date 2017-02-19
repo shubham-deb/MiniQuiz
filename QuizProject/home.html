@@ -1,0 +1,145 @@
+<!DOCTYPE>
+<html>
+
+<head>
+<style type="text/css">
+
+body{
+margin:0px;
+padding: 0;
+background-image:url("enteringpageimage.jpg");
+background-repeat:no-repeat;
+background-size:1500px 1000px;
+}
+
+
+.header1{
+min-width:50px;
+min-height:150px;
+border-bottom-style:;
+border-bottom-color:;
+border-right-style:;
+border-right-color:;
+border-left-color:transparent;
+border-top-color:;
+}
+
+
+
+.header2{
+position:absolute;
+top:0px;
+left:100px;
+min-width:100px;
+min-height:150px;
+border-right-color:;
+border-right-style:;
+border-left-color:transparent;
+border-top-color:transparent;
+border-bottom-color:transparent;
+}
+
+.header3{
+position:relative;
+left:10px;
+min-width:10px;
+min-height:50px;
+border-left-width:20px;
+border-right-color:;
+border-right-style:;
+border-left-color:;
+border-top-color:transparent;
+border-bottom-color:;
+}
+.let-spacing{
+letter-spacing:5px;
+font-family:"Times New Roman";
+font-size:40px;
+word-spacing:5px;
+position:relative;
+left:400px;
+top:150px;
+}
+#shubham{
+ -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   { -webkit-transform: scale(.2,.4);}
+    25%  { -webkit-transform: scale(.3,.5);}
+    50%  { -webkit-transform: scale(.4,.6);}
+    100% { -webkit-transform: scale(1,1);}
+}
+#rohit{
+ -webkit-animation: myfirst 6s; /* Chrome, Safari, Opera */
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   { -webkit-transform: scale(.2,.4);}
+    25%  { -webkit-transform: scale(.3,.5);}
+    50%  { -webkit-transform: scale(.5,.7);}
+    100% { -webkit-transform: scale(1,1);}
+}
+
+#bishal{
+ -webkit-animation: myfirst 8s; /* Chrome, Safari, Opera */
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   { -webkit-transform: scale(.2,.4);}
+    25%  { -webkit-transform: scale(.3,.5);}
+    50%  { -webkit-transform: scale(.8,.9);}
+    100% { -webkit-transform: scale(1,1);}
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript">
+setTimeout(function(){
+$("#whole-text-1").fadeIn("slow","linear");
+}, 1000);
+setTimeout(function(){
+$("#whole-text-1").fadeOut("slow","linear");
+}, 2000);	
+setTimeout(function(){
+$("#mini").fadeIn("slow","linear");
+}, 3000);
+setTimeout(function(){
+$("#mini").fadeOut("slow","linear");
+}, 8000);
+setTimeout(function(){
+$("#whole-text-3").fadeIn("slow","linear");
+}, 9000);
+setTimeout(function(){
+$("#whole-text-3").fadeOut("slow","linear");
+}, 10000);
+setTimeout(function(){
+window.location.assign("ENTERING%20PAGE%202.html");
+}, 11000);
+</script>
+</head>
+
+<body>
+<div class="header1">
+</div>
+
+<div class="header2">
+</div>
+<div id="whole-text-1" class="let-spacing" style="display:none;position:absolute;top:100px;left:300px;">
+<font color="white" size="5">HELLO</font>
+</div>
+<div id="mini"  class="let-spacing" style="display:none;position:absolute;top:200px;left:300px;">
+<font color="white" size="5">THIS IS A MINI PROJECT MADE BY:</font>
+<br/>
+<ul>
+<li id="shubham"><font color="white" size="5">SHUBHAM DEB</font></li> <br/>
+<li id="bishal"><font color="white" size="5">BISHAL SINGH</font></li> <br/>
+<li id="rohit"><font color="white" size="5">ROHIT CHAURASIA</font></li>
+</ul>
+</div>
+<div id="whole-text-3" class="let-spacing" style="display:none;position:absolute;top:300px;left:300px;">
+<font color="white" size="5">OUR PROJECT IS BASICALLY A <br/><br/>LEARNING MANAGEMENT SYSTEM</font>
+</div>
+
+</body>
+</html>
